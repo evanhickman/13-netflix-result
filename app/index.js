@@ -10,3 +10,10 @@ fetch('http://netflixroulette.net/api/api.php?title=Attack%20on%20titan')
   .then((data) => {
     fillInResult(searchResult, data);
   });
+
+function fillResults(results) {
+  const resultData = document.querySelector('.result');
+  resultData.innerHTML = '';
+
+
+}
