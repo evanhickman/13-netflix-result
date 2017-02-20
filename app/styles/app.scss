@@ -2,7 +2,7 @@
 // @import 'normalize';
 
 $c-background-dark: #232222;
-$c-backgroud-light: #999;
+$c-backgroud-light: #aaa;
 $c-background-blue: #5384d7;
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
@@ -22,6 +22,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
       height: 2rem;
       padding-left: 1rem;
       border: 0;
+      font-size: 0.8rem;
     }
 
     &__button {
@@ -29,6 +30,15 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
       border: 0;
       background: $c-background-blue;
       font-size: 1rem;
+      cursor: pointer;
+
+      &:active {
+        background: darken($c-background-blue, 20);
+      }
+
+      &:focus {
+        outline: 0;
+      }
     }
   }
 
