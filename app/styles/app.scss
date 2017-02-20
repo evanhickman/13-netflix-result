@@ -3,9 +3,45 @@
 
 $c-background-dark: #232222;
 $c-backgroud-light: #999;
+$c-background-blue: #5384d7;
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
 @import 'box-sizing';
 @import 'resets';
 @import 'double-container';
+
+.result {
+  background: $c-backgroud-light;
+
+  &-search {
+    display: flex;
+
+    &__field {
+      flex-grow: 1;
+      height: 2rem;
+      padding-left: 1rem;
+      border: 0;
+    }
+
+    &__button {
+      padding-right: 1rem;
+      border: 0;
+      background: $c-background-blue;
+      font-size: 1rem;
+    }
+  }
+
+  &-content {
+    padding: 1rem;
+
+    &__main {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.main-pic {
+  height: 15rem;
+}
