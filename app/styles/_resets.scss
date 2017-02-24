@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  background: $c-background-dark;
+  font-family: Helvetica, sans-serif;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  align-self: center;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
